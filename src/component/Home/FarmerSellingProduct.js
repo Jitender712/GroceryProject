@@ -263,7 +263,7 @@ export default function FarmerSellingProduct() {
                   <ProductTitle>{item.productIdentifier}</ProductTitle>
                   <Desc>{item.description}</Desc>
                   <Section>
-                    <Price>{item.mrp}</Price>
+                    <Price>Rs. {item.mrp}</Price>
                     <Button>
                       <Shop>Buy Now</Shop>
                     </Button>

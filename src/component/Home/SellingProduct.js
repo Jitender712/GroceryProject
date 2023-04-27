@@ -293,8 +293,8 @@ export default function SellingProduct() {
                   <Desc>{items.description}</Desc>
                   <Section>
                     <Price>
-                      <Mrp>{items.mrp}</Mrp>
-                      <Msp>{items.msp}</Msp>
+                      <Mrp>Rs. {items.mrp}</Mrp>
+                      <Msp>Rs. {items.msp}</Msp>
                     </Price>
                     <Button>
                       <Shop>Buy Now</Shop>

@@ -20,8 +20,8 @@ const Wrapper1 = styled.div`
   align-items: flex-start;
   padding: 0px;
   gap: 32px;
+  width: "670px";
   position: relative;
-  width: 670px;
   // height: 495px;
 `;
 const Heading = styled.div`
@@ -182,8 +182,6 @@ const MapBox = styled.div`
   height: 395px;
 `;
 function BillingInfo({ google }) {
-  // const [fullName, setFullName] = useState("");
-  // const [lastName, setLastName] = useState("");
   const [house, setHouse] = useState("");
   const [street, setStreet] = useState("");
   const [city, setCity] = useState("");
@@ -363,6 +361,8 @@ function BillingInfo({ google }) {
       }
     }
   };
+
+  Geocode.setApiKey(GOOGLE_API_KEY);
 
   const onMarkerDragEnd = (event) => {
     console.log("Event", event.map.center);
